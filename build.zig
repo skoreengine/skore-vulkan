@@ -15,5 +15,4 @@ pub fn build(b: *std.Build) void {
 
     m.link_libcpp = true;
     m.addCSourceFile(.{ .file = b.path("src/vk_mem_alloc.cpp") });
-    m.addCSourceFile(.{ .file = b.path("src/volk.c") });
 }
